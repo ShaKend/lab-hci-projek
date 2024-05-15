@@ -1,0 +1,20 @@
+:root {
+    --mid: #1f2544;
+    --btm: #4a106f;
+    --card: #161a2e;
+}
+
+.container .content .card img{
+    max-height: 300px;
+}
+.content{
+    background-color: var(--mid);
+    padding: 10px;
+}
+.content .card{
+    background-color: var(--mid);
+}
+.bg-calendar{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}

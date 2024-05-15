@@ -1,0 +1,10 @@
+:root {
+    --mid: #1f2544;
+    --btm: #4a106f;
+}
+
+.navbar-color {
+  z-index: 9999;
+  background-color: var(--mid);
+  height: 90px;
+}

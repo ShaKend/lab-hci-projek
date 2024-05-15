@@ -1,25 +1,32 @@
 :root {
-  --mid: #1f2544;
+  --top: #1f2544;
   --btm: #4a106f;
+  --bg: #161a2e;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
 body {
   min-height: 2000px;
 }
-.navbar-color {
-  z-index: 9999;
-}
+
 .red-color {
   color: #fc2947;
 }
 
 /* intro  */
 .intro {
+  margin-top: 3.5rem;
   background-image: url("../assets/asphalt_home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--mid);
+  background-color: var(--bg);
   min-height: 100vh;
 }
 .intro::after {
@@ -28,49 +35,78 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #1f2544 6%, #ffffff00 25%);
+  background: linear-gradient(0deg, #161a2e 6%, #ffffff00 35%);
 }
 
 /* trailer  */
+.about{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .trailer {
-  /* background-color: #404040; */
-  background-color: var(--mid);
-  padding-top: 100px;
-  padding-left: 40px;
+  background-color: var(--bg);
+  padding-left: 5.4rem;
 }
 .trailer iframe {
   width: 700px;
   height: 450px;
 }
-.trailer .text {
-  position: absolute;
+.about .row .text {
   margin-left: 100px;
   padding-right: 60px;
   width: 800px;
 }
+.about .row .text ul{
+  font-size: 1.3rem;
+}
 .fonts-4 {
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 
 /* download  */
-/* .download {
-  background-image: url("../assets/asphalt_download.jpeg");
-  opacity: 0.2;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--btm);
-  min-height: 100vh;
-} */
 .download {
-  background-image: url("../assets/asphalt_download2.jpg");
+  background-image: url("../assets/asphalt_dl2.jpg");
   background-size: cover;
+  display: flex;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding-top: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(25, 15, 55, 0.9);
 }
+.download::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #161a2e 6%, #ffffff00 35%);
+}
+.download .content{
+  margin: auto;
+  /* max-width: 45rem; */
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+.download .content h1{
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+.download .content .download-img  {
+  margin-top: 12rem;
+  justify-content: center;
+}
+.download .content .download-img img {
+  width: 300px;
+}
+.mx-download-img{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+/* .download .content .download-img img{
+  width: 300px;
+} */
+
 /* .download-content {
   background-color: black;
   opacity: 0.3;
@@ -91,36 +127,26 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 85%;
-  }
+@media screen and (max-width: 1290px) {
   /* trailer */
-  .trailer {
+  .about{
     padding-top: 60px;
-    padding-left: 15px;
   }
-  .trailer iframe {
-    margin-top: 30px;
-    width: 580px;
-    height: 300px;
+  .trailer {
+    padding-left: 3.6rem;
   }
-  .trailer .text {
-    margin-left: 60px;
-    padding-right: 40px;
-    width: 450px;
+  .trailer iframe{
+    width: 540px;
+    height: 320px;
   }
-  .fonts-4 {
-    font-size: 16px;
+  .about .row .text {
+    margin-left: 1.8rem;
+    padding-right: 1rem;
+    width: 460px;
   }
 
-  /* download */
-  .download {
-    padding-top: 120px;
-  }
-  .download .media-download {
-    max-width: 750px;
-    align-items: center;
-    margin: 0 auto;
+  /* DOWNLOAD  */
+  .download .content .download-img img {
+    width: 250px;
   }
 }
