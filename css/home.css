@@ -11,9 +11,9 @@
   border: none;
   text-decoration: none;
 }
-body {
+/* body {
   min-height: 2000px;
-}
+} */
 
 .red-color {
   color: #fc2947;
@@ -39,7 +39,7 @@ body {
 }
 
 /* trailer  */
-.about{
+.about {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -56,7 +56,7 @@ body {
   padding-right: 60px;
   width: 800px;
 }
-.about .row .text ul{
+.about .row .text ul {
   font-size: 1.3rem;
 }
 .fonts-4 {
@@ -81,25 +81,25 @@ body {
   height: 100%;
   background: linear-gradient(0deg, #161a2e 6%, #ffffff00 35%);
 }
-.download .content{
+.download .content {
   margin: auto;
   /* max-width: 45rem; */
   color: white;
   text-align: center;
   padding: 3rem;
 }
-.download .content h1{
+.download .content h1 {
   font-size: 3rem;
   padding-top: 5rem;
 }
-.download .content .download-img  {
+.download .content .download-img {
   margin-top: 12rem;
   justify-content: center;
 }
 .download .content .download-img img {
   width: 300px;
 }
-.mx-download-img{
+.mx-download-img {
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -127,15 +127,15 @@ body {
   }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1200px) {
   /* trailer */
-  .about{
+  .about {
     padding-top: 60px;
   }
   .trailer {
     padding-left: 3.6rem;
   }
-  .trailer iframe{
+  .trailer iframe {
     width: 540px;
     height: 320px;
   }
@@ -148,5 +148,20 @@ body {
   /* DOWNLOAD  */
   .download .content .download-img img {
     width: 250px;
+  }
+  .download::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #161a2e 4%, #ffffff00 15%);
+  }
+  .download .content .download-img {
+    margin-top: 8rem;
+  }
+  .download .content h1 {
+    font-size: 3rem;
+    padding-top: 1rem;
   }
 }
