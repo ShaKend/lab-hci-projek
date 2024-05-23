@@ -18,30 +18,77 @@ body {
   position: relative;
   display: flex;
   min-height: 100vh;
-  z-index: -999;
+  margin-bottom: 3rem;
+}
+.header {
+  margin-top: 5rem;
+  margin: 5rem auto 0 auto;
+  z-index: 2;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 .hero {
   position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 0;
+  padding: 1.8rem;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
 }
 .hero h1 {
-  margin-top: 10rem;
   font-size: 3.5rem;
-  margin-bottom: 2.8rem;
 }
-.hero h3 {
-  font-size: 2.2rem;
-  margin-bottom: 0.8rem;
+.text {
+  max-width: 700px;
+}
+.text h3 {
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
+}
+.hero iframe {
+  width: 640px;
+  height: 400px;
+  z-index: 9999999;
+  border-radius: 5px;
 }
 .hero p {
+  font-size: 1.2rem;
+}
+.content {
+  margin-top: 3rem;
+  border: 1px solid var(--ext);
+  border-radius: 5px;
+  background-color: var(--top);
+  padding: 1rem 1.2rem;
+}
+.card {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 2px var(--card) solid;
+}
+.content h1 {
   font-size: 1.8rem;
 }
-/* .hero {
-  margin-top: 60px;
-} */
+.card .card-img img {
+  max-width: 450px;
+  border-radius: 5px;
+}
+.card .card-txt {
+  margin-left: 3rem;
+}
+.card .card-txt h4 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card .card-txt p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
 
 @media screen and (max-width: 1200px) {
   .curr-event {

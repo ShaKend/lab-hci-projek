@@ -31,13 +31,19 @@
 .mt-first-news {
   margin-top: 8rem;
 }
+.news .text small{
+  margin-top: 0.3rem;
+}
+h3{
+  margin-top: 0.8rem;
+}
 small {
   color: #ffffff89;
   margin-top: 3px;
   height: 6px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1290px) {
   .news img {
     width: 280px;
   }
