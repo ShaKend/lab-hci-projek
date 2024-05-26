@@ -1,0 +1,146 @@
+:root {
+  --top: #1f2544;
+  --btm: #4a106f;
+  --bg: #161a2e;
+}
+
+body {
+  color: white;
+}
+
+.subs {
+  margin-top: 5rem;
+  background-image: url("../assets/subs2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bg);
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  margin-top: 4rem;
+  padding: 1.6rem;
+}
+.content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.content h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.row .benefit {
+  width: 350px;
+  height: 350px;
+  background-color: var(--top);
+  display: flex;
+  margin: 1.5rem 1rem 1rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+.text {
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+.text i {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.text p {
+  font-size: 2rem;
+}
+.benefit:hover {
+  background-color: var(--bg);
+}
+
+.pop-up-reg button {
+  color: white;
+  background-color: #fc2947;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  width: 450px;
+  height: 100px;
+  margin: 3rem auto;
+  transition: 0.2s;
+}
+.pop-up-reg button:hover {
+  background-color: #d4223d;
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  display: none;
+}
+.pop-up {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #161a2e;
+  padding: 1.4rem;
+  z-index: 99;
+  box-sizing: border-box;
+  display: none;
+  transition: 1s;
+}
+.pop-up form {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.pop-up form .fill {
+  margin: 0.4rem 0 1.6rem 0;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
+}
+.pop-up form label {
+  font-size: 18px;
+}
+.pop-up span {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+}
+#male {
+  margin-top: 0.5rem;
+}
+::-webkit-calendar-picker-indicator {
+  background-color: white;
+}
+.submit-form {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #fc2947;
+  font-size: 18px;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+}

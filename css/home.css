@@ -15,10 +15,6 @@
   min-height: 2000px;
 } */
 
-.red-color {
-  color: #fc2947;
-}
-
 /* intro  */
 .intro {
   margin-top: 3.5rem;
@@ -27,6 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--bg);
+  position: relative;
   min-height: 100vh;
 }
 .intro::after {
@@ -51,6 +48,9 @@
   width: 700px;
   height: 450px;
 }
+.about .row {
+  display: flex;
+}
 .about .row .text {
   margin-left: 100px;
   padding-right: 60px;
@@ -68,6 +68,7 @@
   background-image: url("../assets/asphalt_dl2.jpg");
   background-size: cover;
   display: flex;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -95,6 +96,7 @@
 .download .content .download-img {
   margin-top: 12rem;
   justify-content: center;
+  display: flex;
 }
 .download .content .download-img img {
   width: 300px;
@@ -117,13 +119,26 @@
 /* UKURAN MEDIA LAIN  */
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 85%;
+  .intro {
+    object-fit: cover;
   }
-}
-@media screen and (max-width: 650px) {
-  html {
-    font-size: 85%;
+  .about {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .trailer {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .about .row .text {
+    display: inline-block;
+    margin-left: 90px;
+  }
+  .download .content .download-img {
+    flex-wrap: wrap;
   }
 }
 
