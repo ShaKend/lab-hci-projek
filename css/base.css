@@ -52,6 +52,9 @@ body {
 .navbar .nav-logo img {
   width: 4rem;
 }
+.navbar .nav-main.active {
+  right: 0%;
+}
 .navbar .nav-main a {
   color: white;
   font-size: 1.2rem;
@@ -145,7 +148,7 @@ footer .links a {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 900px;
+    max-width: 500px;
   }
   html {
     font-size: 83%;
@@ -179,10 +182,8 @@ footer .links a {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 1190px) {
-  .container {
-    max-width: 1000px;
-  }
+/* 1300 <  */
+@media (max-width: 1250px) {
   footer {
     color: white;
     text-align: center;
@@ -207,8 +208,8 @@ footer .links a {
   }
 }
 /* 1300 <  */
-@media (min-width: 1290px) {
+@media (min-width: 1340px) {
   .container {
-    max-width: 1320px;
+    max-width: 1310px;
   }
 }
