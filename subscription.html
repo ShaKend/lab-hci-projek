@@ -3,19 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/subscription.css" />
     <link rel="stylesheet" href="css/base.css" />
-    <link
-      rel="stylesheet"
-      href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css"
-    />
-    <title>Asphalt 9</title>
+    <link rel="stylesheet" href="css/subscription.css" />
+    <link rel="stylesheet" href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css" />
+    <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="home.html" class="nav-logo"
-        ><img src="assets/asphalt_white.png" alt="" srcset=""
-      /></a>
+      <a href="home.html" class="nav-logo"><img src="../assets/asphalt_white.png" alt="" srcset="" /></a>
 
       <div class="nav-main">
         <a href="home.html">Home</a>
@@ -26,9 +21,10 @@
       </div>
 
       <div class="nav-extra">
-        <a href="#"><i class="bi bi-list"></i></a>
+        <a id="menu"><i class="bi bi-list"></i></a>
       </div>
     </nav>
+
     <div class="subs">
       <div class="container">
         <div class="content">
@@ -36,10 +32,7 @@
             DO YOU WANT TO GET <br />
             <span class="red-color">BENEFIT AND REWARDS</span> BONUS?
           </h1>
-          <h2>
-            Become One Of Our <span class="red-color">Content Creator</span
-            ><br />to Receive Benefit and Rewards
-          </h2>
+          <h2>Become One Of Our <span class="red-color">Content Creator</span><br />to Receive Benefit and Rewards</h2>
 
           <div class="row">
             <div class="benefit">
@@ -61,8 +54,35 @@
               </div>
             </div>
           </div>
+
+          <div class="pop-up-reg">
+            <button type="button" id="open-popup">Register Now!</button>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="pop-up">
+          <span class="close">X</span>
+          <form method="post">
+            <h2>Join Us</h2>
+            <label for="name">Name</label>
+            <input class="d-block fill" type="text" name="name" id="name" placeholder="Name" />
+
+            <label for="email">Email</label>
+            <input class="d-block fill" type="email" name="email" id="email" placeholder="@gmail.com" />
+
+            <label for="birth">Date of Birth</label>
+            <input class="d-block fill" type="date" name="birth" id="birth" />
+
+            <label class="d-block">Gender</label>
+            <label> <input type="radio" name="gender" class="box" id="male" value="Male" /> Male </label><br />
+            <label> <input type="radio" name="gender" class="box" id="female" value="Female" /> Female </label> <br />
+
+            <input type="checkbox" name="check" id="check" class="check box" /><label class="check" for="check"> I have read <a href="">terms & condition</a></label>
+            <button type="button" class="submit-form">Sumbit</button>
+          </form>
         </div>
       </div>
     </div>
   </body>
+  <script src="js/script.js"></script>
 </html>

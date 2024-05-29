@@ -64,3 +64,97 @@ body {
 .benefit:hover {
   background-color: var(--bg);
 }
+
+.pop-up-reg button {
+  color: white;
+  background-color: #fc2947;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  width: 450px;
+  height: 100px;
+  margin: 3rem auto;
+  transition: 0.2s;
+}
+.pop-up-reg button:hover {
+  background-color: #d4223d;
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  display: none;
+}
+.pop-up {
+  position: fixed;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-color: #161a2e;
+  padding: 1.4rem;
+  z-index: 99;
+  box-sizing: border-box;
+  display: none;
+  transition: 1s;
+}
+.pop-up form {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.pop-up form .fill {
+  margin: 0.4rem 0 1.6rem 0;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
+}
+.pop-up form label {
+  font-size: 18px;
+}
+.pop-up span {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+}
+#male {
+  margin-top: 0.5rem;
+}
+.check {
+  margin-top: 1rem;
+}
+
+#check {
+  width: 1rem;
+}
+::-webkit-calendar-picker-indicator {
+  background-color: white;
+}
+.submit-form {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #fc2947;
+  font-size: 18px;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    width: 200vw;
+    height: 200vw;
+  }
+}

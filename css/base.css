@@ -146,16 +146,22 @@ footer .links a {
   list-style: none;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
 @media (max-width: 768px) {
   .container {
-    max-width: 500px;
+    max-width: 600px;
   }
   html {
-    font-size: 83%;
+    font-size: 93%;
   }
   #menu {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bold;
   }
   .navbar {
     height: 72px;
