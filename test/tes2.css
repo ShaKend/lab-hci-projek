@@ -37,7 +37,6 @@ body {
 
 .form-container input[type="text"],
 .form-container input[type="email"],
-.form-container input[type="date"],
 .form-container select {
   width: 100%;
   padding: 10px;
@@ -46,8 +45,41 @@ body {
   box-sizing: border-box;
 }
 
+.custom-date-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-date-container input[type="text"] {
+  width: calc(100% - 30px);
+}
+
+.custom-date-icon {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
 .form-container input[type="checkbox"] {
   margin-right: 5px;
+}
+
+form fieldset {
+  border: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+form fieldset legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form fieldset label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-container .btn {
@@ -67,12 +99,4 @@ body {
 
 .form-container .cancel {
   background-color: #f44336;
-}
-
-/* Style the date input to look consistent across browsers */
-input[type="date"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }

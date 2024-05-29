@@ -12,9 +12,20 @@ document
 
 // Optional: Close the form when clicking outside of it
 window.addEventListener("click", function (event) {
-  if (event.target != document.getElementById("popUpForm")) {
+  if (event.target == document.getElementById("popUpForm")) {
     document.getElementById("popUpForm").style.display = "none";
   }
+});
+
+document
+  .getElementById("customDateIcon")
+  .addEventListener("click", function () {
+    document.getElementById("realDob").click();
+  });
+
+document.getElementById("realDob").addEventListener("change", function () {
+  const realDobValue = document.getElementById("realDob").value;
+  document.getElementById("dob").value = realDobValue;
 });
 
 // Form submission handling
@@ -27,7 +38,7 @@ document
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const dob = document.getElementById("dob").value;
-    const gender = document.getElementById("gender").value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
     const terms = document.getElementById("terms").checked;
 
     // Validate form data if needed (example: check if terms are agreed)

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pop-Up Form</title>
+    <title>Custom Date Picker</title>
     <link rel="stylesheet" href="tes2.css" />
   </head>
   <body>
@@ -19,15 +19,47 @@
         <input type="email" id="email" name="email" required />
 
         <label for="dob"><b>Date of Birth</b></label>
-        <input type="date" id="dob" name="dob" required />
+        <div class="custom-date-container">
+          <input
+            type="text"
+            id="dob"
+            name="dob"
+            placeholder="YYYY-MM-DD"
+            required
+          />
+          <span class="custom-date-icon" id="customDateIcon">&#128197;</span>
+          <input
+            type="date"
+            id="realDob"
+            name="realDob"
+            style="display: none"
+          />
+        </div>
 
-        <label for="gender"><b>Gender</b></label>
-        <select id="gender" name="gender" required>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-          <option value="prefer_not_to_say">Prefer not to say</option>
-        </select>
+        <fieldset>
+          <legend><b>Gender</b></legend>
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            Female
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other" required />
+            Other
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="prefer_not_to_say"
+              required
+            />
+            Prefer not to say
+          </label>
+        </fieldset>
 
         <label for="terms">
           <input type="checkbox" id="terms" name="terms" required />

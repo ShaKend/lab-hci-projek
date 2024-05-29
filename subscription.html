@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/subscription.css" />
-    <link rel="stylesheet" href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css" />
+    <link
+      rel="stylesheet"
+      href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="home.html" class="nav-logo"><img src="../assets/asphalt_white.png" alt="" srcset="" /></a>
+      <a href="home.html" class="nav-logo"
+        ><img src="../assets/asphalt_white.png" alt="" srcset=""
+      /></a>
 
       <div class="nav-main">
         <a href="home.html">Home</a>
@@ -32,7 +37,10 @@
             DO YOU WANT TO GET <br />
             <span class="red-color">BENEFIT AND REWARDS</span> BONUS?
           </h1>
-          <h2>Become One Of Our <span class="red-color">Content Creator</span><br />to Receive Benefit and Rewards</h2>
+          <h2>
+            Become One Of Our <span class="red-color">Content Creator</span
+            ><br />to Receive Benefit and Rewards
+          </h2>
 
           <div class="row">
             <div class="benefit">
@@ -65,19 +73,55 @@
           <form method="post">
             <h2>Join Us</h2>
             <label for="name">Name</label>
-            <input class="d-block fill" type="text" name="name" id="name" placeholder="Name" />
+            <input
+              class="d-block fill"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
 
             <label for="email">Email</label>
-            <input class="d-block fill" type="email" name="email" id="email" placeholder="@gmail.com" />
+            <input
+              class="d-block fill"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="@gmail.com"
+              required
+            />
 
             <label for="birth">Date of Birth</label>
-            <input class="d-block fill" type="date" name="birth" id="birth" />
+            <input
+              class="d-block fill"
+              type="date"
+              name="birth"
+              id="birth"
+              required
+            />
 
-            <label class="d-block">Gender</label>
-            <label> <input type="radio" name="gender" class="box" id="male" value="Male" /> Male </label><br />
-            <label> <input type="radio" name="gender" class="box" id="female" value="Female" /> Female </label> <br />
+            <fieldset>
+              <legend><b>Gender</b></legend>
+              <label>
+                <input type="radio" name="gender" value="male" required />
+                Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" required />
+                Female
+              </label>
+            </fieldset>
 
-            <input type="checkbox" name="check" id="check" class="check box" /><label class="check" for="check"> I have read <a href="">terms & condition</a></label>
+            <input
+              type="checkbox"
+              name="check"
+              id="check"
+              class="check box"
+              required
+            /><label class="check" for="check">
+              I have read <a href="">terms & condition</a></label
+            >
             <button type="button" class="submit-form">Sumbit</button>
           </form>
         </div>

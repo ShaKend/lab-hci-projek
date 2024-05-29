@@ -5,6 +5,10 @@ const popup = document.querySelector("#open-popup");
 const form = document.querySelector(".pop-up");
 const close = document.querySelector(".close");
 const overlay = document.querySelector(".overlay");
+const submitSubs = document.querySelector(".submit-form");
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const gender = document.querySelector('input[name="gender"]:checked');
 
 menu.addEventListener("click", () => {
   navmain.classList.toggle("active");
@@ -34,4 +38,9 @@ document.addEventListener("click", function (e) {
     form.style.display = "none";
     overlay.style.display = "none";
   }
+});
+submitSubs.addEventListener("click", (e) => {
+  console.log(name.value);
+  console.log(email.value);
+  console.log(gender.value);
 });
