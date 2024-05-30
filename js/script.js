@@ -8,7 +8,8 @@ const overlay = document.querySelector(".overlay");
 const submitSubs = document.querySelector(".submit-form");
 const name = document.querySelector("#name");
 const email = document.querySelector("#email");
-const gender = document.querySelector('input[name="gender"]:checked');
+const birth = document.querySelector("#birth");
+const terms = document.querySelector("#terms");
 
 menu.addEventListener("click", () => {
   navmain.classList.toggle("active");
@@ -39,8 +40,35 @@ document.addEventListener("click", function (e) {
     overlay.style.display = "none";
   }
 });
-submitSubs.addEventListener("click", (e) => {
-  console.log(name.value);
-  console.log(email.value);
-  console.log(gender.value);
-});
+
+// console.log(name.value);
+// console.log(email.value);
+// console.log(gender);
+// submitSubs.addEventListener("click", (e) => {
+//   console.log(name.value);
+//   console.log(email.value);
+//   console.log(gender.value);
+// });
+function test() {
+  const nameErr = document.querySelector(".name-error");
+  const emailErr = document.querySelector(".email-error");
+  const passErr = document.querySelector(".pass-error");
+  const confirmErr = document.querySelector(".confirm-error");
+  const gender = document.querySelector('input[name="gender"]:checked');
+  const errorField = document.querySelector(".error-msg");
+
+  if (name.value == "" || email.value == "" || gender == null || birth.value == null || !terms.checked) {
+    errorField.style.display = "block";
+    console.log("ada yg null");
+  }
+
+  if (name.value.length < 3) {
+    console.log("nama kurang dari 3");
+    nameErr.textContent = "Name must be at least 3 letters!";
+  }
+
+  if (!email.value.includes("@gmail.com")) {
+    console.log("no @gmail.com");
+    emailErr.textContent = "Email must contain @gmail.com";
+  }
+}

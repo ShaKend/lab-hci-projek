@@ -80,7 +80,8 @@ body {
   margin: 3rem auto;
   transition: 0.2s;
 }
-.pop-up-reg button:hover {
+.pop-up-reg button:hover,
+.pop-up form button:hover {
   background-color: #d4223d;
 }
 .overlay {
@@ -98,7 +99,7 @@ body {
   width: 500px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -45%);
   background-color: #161a2e;
   padding: 1.4rem;
   z-index: 99;
@@ -112,7 +113,7 @@ body {
   margin-right: 1rem;
 }
 .pop-up form .fill {
-  margin: 0.4rem 0 1.6rem 0;
+  margin-top: 0.2rem;
   background-color: transparent;
   color: white;
   font-size: 18px;
@@ -120,21 +121,32 @@ body {
   transition: 0.3s;
   border-bottom: 1px solid white;
 }
+.pop-up form small {
+  display: block;
+  padding-top: 4px;
+  height: 28px;
+  font-weight: 560;
+  font-size: 15px;
+}
 .pop-up form label {
   font-size: 18px;
+}
+.pop-up .error-msg {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: none;
 }
 .pop-up span {
   cursor: pointer;
   display: inline-block;
   width: 40px;
 }
-#male {
-  margin-top: 0.5rem;
+.pop-up form .terms2 {
+  margin-top: 1rem;
 }
 .check {
   margin-top: 1rem;
 }
-
 #check {
   width: 1rem;
 }
@@ -150,6 +162,7 @@ body {
   width: 200px;
   height: 60px;
   border-radius: 5px;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {
