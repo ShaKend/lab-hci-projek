@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/subscription.css" />
-    <link rel="stylesheet" href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css" />
+    <link
+      rel="stylesheet"
+      href="assets/icons2/bootstrap-icons-1.11.3/font/icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="home.html" class="nav-logo"><img src="../assets/asphalt_white.png" alt="" srcset="" /></a>
+      <a href="home.html" class="nav-logo"
+        ><img src="../assets/asphalt_white.png" alt="" srcset=""
+      /></a>
 
       <div class="nav-main">
         <a href="home.html">Home</a>
@@ -32,7 +37,10 @@
             DO YOU WANT TO GET <br />
             <span class="red-color">BENEFIT AND REWARDS</span> BONUS?
           </h1>
-          <h2>Become One Of Our <span class="red-color">Content Creator</span><br />to Receive Benefit and Rewards</h2>
+          <h2>
+            Become One Of Our <span class="red-color">Content Creator</span
+            ><br />to Receive Benefit and Rewards
+          </h2>
 
           <div class="row">
             <div class="benefit">
@@ -64,23 +72,61 @@
           <span class="close">X</span>
           <form>
             <label for="name">Name</label>
-            <input class="d-block fill" type="text" name="name" id="name" placeholder="Name" autocomplete="off" required />
+            <input
+              class="d-block fill"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              autocomplete="off"
+              required
+            />
             <small class="red-color name-error"></small>
 
             <label for="email">Email</label>
-            <input class="d-block fill" type="email" name="email" id="email" placeholder="@gmail.com" required autocomplete="off" />
+            <input
+              class="d-block fill"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="@gmail.com"
+              required
+              autocomplete="off"
+            />
             <small class="red-color email-error"></small>
 
             <label for="pass">Password</label>
-            <input class="d-block fill" type="password" name="pass" id="pass" placeholder="Password" required autocomplete="off" />
+            <input
+              class="d-block fill"
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Password"
+              required
+              autocomplete="off"
+            />
             <small class="red-color pass-error"></small>
 
             <label for="confirm">Confirm Password</label>
-            <input class="d-block fill" type="password" name="confirm" id="confirm" placeholder="Password" required autocomplete="off" />
+            <input
+              class="d-block fill"
+              type="password"
+              name="confirm"
+              id="confirm"
+              placeholder="Password"
+              required
+              autocomplete="off"
+            />
             <small class="red-color confirm-error"></small>
 
             <label for="birth">Date of Birth</label>
-            <input class="d-block fill" type="date" name="birth" id="birth" required />
+            <input
+              class="d-block fill"
+              type="date"
+              name="birth"
+              id="birth"
+              required
+            />
             <small class="red-color birth-error"></small>
 
             <fieldset>
@@ -103,8 +149,15 @@
             <small class="red-color terms-error"></small>
 
             <div class="error-msg red-color"><p>Fill all the field</p></div>
-            <button type="button" onclick="test()" class="submit-form">Sumbit</button>
+
+            <button type="button" onclick="form_validate()" class="submit-form">
+              Sumbit
+            </button>
           </form>
+          <div class="success">
+            <h2><i class="bi bi-check-circle-fill"></i></h2>
+            <h3>Successfully Registered</h3>
+          </div>
         </div>
       </div>
     </div>

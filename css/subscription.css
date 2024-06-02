@@ -164,6 +164,10 @@ body {
   border-radius: 5px;
   transition: 0.2s;
 }
+.success {
+  display: none;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .overlay {

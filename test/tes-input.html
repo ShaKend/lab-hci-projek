@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="w2.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <div class="inputs">
+        <label class="d-block" for="password">Password</label>
+        <input
+          class="bg-transparent text-light w-25"
+          type="password"
+          name="password"
+          id="password"
+        />
+        <label for="confirm" class="d-block mt-3">Confirm</label>
+        <input
+          type="password"
+          name="confirm"
+          id="confirm"
+          class="bg-transparent text-light w-25"
+        />
+      </div>
+
+      <div class="check-box mt-5">
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">I agree with terms and condition</label>
+      </div>
+
+      <button type="button" class="btn btn-primary mt-5" onclick="tes()">
+        Submit
+      </button>
+    </div>
+  </body>
+  <script src="tes-input.js"></script>
+</html>
