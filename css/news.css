@@ -109,6 +109,13 @@ small {
 }
 
 @media (max-width: 768px) {
+  .main-news {
+    max-width: 500px;
+    padding: 1rem;
+  }
+  .main-news img {
+    max-width: 460px;
+  }
   .news {
     min-width: 220px;
   }

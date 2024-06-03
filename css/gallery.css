@@ -1,0 +1,368 @@
+:root {
+  --top: #1f2544;
+  --btm: #4a106f;
+  --bg: #161a2e;
+  --redd: #fc2947;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  margin-top: 8rem;
+  display: none;
+}
+/* .container .cars-gallery img{
+    width: 700px;
+} */
+h1 {
+  font-weight: normal;
+  font-size: 4rem;
+  position: relative;
+  margin: 3.5rem 0;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 3px;
+  background-color: var(--redd);
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.top-content {
+  background-color: var(--top);
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px #5f6588;
+}
+.top-content h3 {
+  background-color: #2e3761;
+  height: 100%;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+label {
+  display: inline-block;
+  margin-left: 2.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+label:hover {
+  color: #d1d1d1c3;
+}
+
+.cars-gallery {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pic {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 0.6rem;
+  max-width: 290px;
+  border-radius: 10px;
+  background-color: var(--top);
+}
+.pic img {
+  max-width: 240px;
+  border-radius: 10px;
+}
+.pic p {
+  margin-top: 0.1rem;
+}
+.s-class::before {
+  content: "S Class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.s-class::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3;
+}
+.s-class:hover::after {
+  height: 100%;
+}
+.s-class:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.a-class::before {
+  content: "A Class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.a-class::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3;
+}
+.a-class:hover::after {
+  height: 100%;
+}
+.a-class:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.b-class::before {
+  content: "B Class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.b-class::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3;
+}
+.b-class:hover::after {
+  height: 100%;
+}
+.b-class:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.c-class::before {
+  content: "C Class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.c-class::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3;
+}
+.c-class:hover::after {
+  height: 100%;
+}
+.c-class:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.d-class::before {
+  content: "D Class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  z-index: 1;
+}
+.d-class::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3;
+}
+.d-class:hover::after {
+  height: 100%;
+}
+.d-class:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+#all:checked ~ .container .cars-gallery .pic {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#s:checked ~ .container .cars-gallery .s-class {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#s:checked ~ .container .cars-gallery .a-class,
+#s:checked ~ .container .cars-gallery .b-class,
+#s:checked ~ .container .cars-gallery .c-class,
+#s:checked ~ .container .cars-gallery .d-class {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+#a:checked ~ .container .cars-gallery .a-class {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#a:checked ~ .container .cars-gallery .s-class,
+#a:checked ~ .container .cars-gallery .b-class,
+#a:checked ~ .container .cars-gallery .c-class,
+#a:checked ~ .container .cars-gallery .d-class {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#b:checked ~ .container .cars-gallery .b-class {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#b:checked ~ .container .cars-gallery .a-class,
+#b:checked ~ .container .cars-gallery .s-class,
+#b:checked ~ .container .cars-gallery .c-class,
+#b:checked ~ .container .cars-gallery .d-class {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#c:checked ~ .container .cars-gallery .c-class {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#c:checked ~ .container .cars-gallery .a-class,
+#c:checked ~ .container .cars-gallery .b-class,
+#c:checked ~ .container .cars-gallery .s-class,
+#c:checked ~ .container .cars-gallery .d-class {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#d:checked ~ .container .cars-gallery .d-class {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#d:checked ~ .container .cars-gallery .a-class,
+#d:checked ~ .container .cars-gallery .b-class,
+#d:checked ~ .container .cars-gallery .c-class,
+#d:checked ~ .container .cars-gallery .s-class {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .top-content h3 {
+    display: none;
+  }
+  .top-content label {
+    margin-left: 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pic {
+    max-width: 200px;
+    max-height: 180px;
+  }
+  .pic img {
+    max-width: 180px;
+  }
+}
