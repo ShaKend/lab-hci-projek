@@ -91,7 +91,7 @@ body {
   width: 100vw;
   height: 100vw;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 3;
+  z-index: 999;
   display: none;
 }
 .pop-up {
@@ -102,7 +102,7 @@ body {
   transform: translate(-50%, -45%);
   background-color: #161a2e;
   padding: 1.4rem;
-  z-index: 99;
+  z-index: 9999;
   box-sizing: border-box;
   display: none;
   transition: 1s;
@@ -173,5 +173,41 @@ body {
   .overlay {
     width: 200vw;
     height: 200vw;
+  }
+}
+@media (max-width: 1200px) {
+  .row .benefit {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+  .text i {
+    font-size: 2.8rem;
+    font-weight: bolder;
+  }
+  .text p {
+    font-size: 1.6rem;
+  }
+
+  /* popup */
+  .pop-up {
+    width: 450px;
+    transform: translate(-50%, -50%);
+  }
+  .pop-up form .fill {
+    font-size: 14px;
+  }
+  .pop-up form label {
+    font-size: 14px;
+  }
+  .pop-up form small {
+    display: block;
+    padding-top: 2px;
+    height: 20px;
+    font-weight: 520;
+    font-size: 12px;
+  }
+  .submit-form {
+    margin-top: 1rem;
   }
 }
